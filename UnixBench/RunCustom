@@ -3,4 +3,4 @@
 ./Run gindex
 
 echo 'All done.'
-echo 'Now run `sudo lshw` and store the result to log your current hardware alongside benchmark results'
+echo 'Now run `sudo lshw` and `uname -a` store the result to log your current configuration alongside benchmark results'
