@@ -46,7 +46,7 @@ SHELL = /bin/sh
 # X11 libraries on your system. (e.g. libX11-devel mesa-libGL-devel)
 #
 # Comment the line out to disable these tests.
-# GRAPHIC_TESTS = defined
+GRAPHIC_TESTS = defined
 
 # Set "GL_LIBS" to the libraries needed to link a GL program.
 GL_LIBS = -lGL -lXext -lX11

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./Run gindex
+
+echo 'All done.'
+echo 'Now run `sudo lshw` and store the result to log your current hardware alongside benchmark results'
