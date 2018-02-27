@@ -49,7 +49,7 @@ SHELL = /bin/sh
 GRAPHIC_TESTS = defined
 
 # Set "GL_LIBS" to the libraries needed to link a GL program.
-GL_LIBS = -lGL -lXext -lX11
+GL_LIBS = -lGL -lXext -lX11 -L/opt/X11/lib
 
 
 # COMPILER CONFIGURATION: Set "CC" to the name of the compiler to use
@@ -110,7 +110,7 @@ else
         OPTON += -mcpu=native
     endif
     #http://stackoverflow.com/questions/9840207/how-to-use-avx-pclmulqdq-on-mac-os-x-lion/19342603#19342603
-    CFLAGS += -Wa,-q
+    #CFLAGS += -Wa,-q
   endif
 
 endif
@@ -132,8 +132,8 @@ TESTDIR = ./testdir
 RESULTDIR = ./results
 TMPDIR = ./tmp
 # other directories
-INCLDIR = /usr/include
-LIBDIR = /lib
+INCLDIR = /usr/include /opt/X11/include
+LIBDIR = /lib /opt/X11/lib
 SCRIPTS = unixbench.logo multi.sh tst.sh index.base
 SOURCES = arith.c big.c context1.c \
 	dummy.c execl.c \
