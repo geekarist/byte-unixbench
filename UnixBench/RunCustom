@@ -8,8 +8,8 @@ cd $(dirname $0)
 
 ./Run gindex
 
-lshw > results/$(hostname)-lshw-$(date -I).txt
+lshw > results/$(hostname)-$(date -I)-lshw.txt
 
-uname -a > results/$(hostname)-uname-a-$(date -I).txt
+uname -a > results/$(hostname)-$(date -I)-uname-a.txt
 
 echo 'All done.'
