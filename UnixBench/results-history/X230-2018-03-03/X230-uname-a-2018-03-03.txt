@@ -1,0 +1,1 @@
+Linux X230 4.13.0-36-lowlatency #40~16.04.1-Ubuntu SMP PREEMPT Sat Feb 17 00:18:34 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux

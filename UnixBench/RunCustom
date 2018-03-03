@@ -1,6 +1,15 @@
 #!/bin/bash
 
+set -eux
+
+test $USER = "root" || { echo 'This script must be run as root'; exit 1; }
+
+cd $(dirname $0)
+
 ./Run gindex
 
+lshw > results/$(hostname)-lshw-$(date -I).txt
+
+uname -a > results/$(hostname)-uname-a-$(date -I).txt
+
 echo 'All done.'
-echo 'Now run `sudo lshw` and `uname -a` store the result to log your current configuration alongside benchmark results'
